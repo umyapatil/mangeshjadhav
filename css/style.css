@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+:root {
+    --primary-color: #1abc9c; 
+    --secondary-color: #ffffff;
+}
+
+.top-heading{
+    position: absolute;
+    top: 0;
+    color: var(--secondary-color);
+}
+.top-heading h1{
+    font-weight: 400;
+    color: rgb(53, 52, 52);
+
+}
+.container{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+label{
+    color: var(--primary-color);
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 18rem;
+    padding: 5rem 4rem;
+    gap: 1.2rem;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box-input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    padding: 0 1rem;
+}
+.box-select{
+    border: none;
+    outline: none;
+    border-bottom: solid 1px gray;
+    padding: 0.4rem 1rem;
+    color: gray;
+}
+.box-button{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+    margin-top: 2rem;
+}
+.box-result{
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px){
+.top-heading{
+    width: 100vw;
+    padding: 0;
+}
+.top-heading h1{
+    font-size: 2rem;
+}
+
+}
